@@ -1,0 +1,21 @@
+import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
+import { StudentComponent } from './student/student.component';
+import { MentorsComponent } from './mentors/mentors.component';
+
+
+const routes: Routes = [
+    { path: '', component: StudentComponent },
+    { path: 'mentors',  component: MentorsComponent  },
+
+
+  ];
+
+
+
+@NgModule({
+    imports: [ RouterModule.forRoot(routes) ],
+    exports: [ RouterModule ]
+})
+
+export class AppRoutingModule {}
